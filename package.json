@@ -1,0 +1,19 @@
+{
+  "name": "twistedfate",
+  "version": "1.0.0",
+  "description": "Jogo de perguntas em formato de cartas com o topico escolar",
+  "main": "index.js",
+  "repository": "https://github.com/nihl999/twistedfate",
+  "author": "Arthur Lorhan",
+  "license": "MIT",
+  "scripts":{
+    "start": "nodemon index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.25"
+  }
+}
