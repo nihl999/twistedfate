@@ -3,7 +3,9 @@ const cardController = require('./controllers/cardController')
 
 const router = express.Router();
 
-router.get('/:subject/cards/', cardController.index)
-router.post('/:subject/cards/newcard', cardController.create)
+router.get('/cards/', cardController.index)
+router.post('/:subject/cards/', cardController.create)
+router.get('/:subject/cards/', cardController.showBySubject)
+router.delete('/cards/:id', cardController.destroy)
 
 module.exports = router;

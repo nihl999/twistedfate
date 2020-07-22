@@ -6,7 +6,7 @@ const CardSchema = new Mongoose.Schema({
         required: true,
     },
     responses: [{
-        type: String,
+        type: Object,
         required: true,
     }],
     subject: {

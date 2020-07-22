@@ -4,7 +4,12 @@ const mongoose = require('mongoose');
 const cors = require('cors')
 const app = express();
 
-mongoose.connect(process.env.DB_URL, {useNewUrlParser: true});
+mongoose.connect(process.env.DB_URL, {
+    useNewUrlParser: true,
+    //useUnifiedTopology: true
+})
+.catch(err => {console.log(err.message);process.exit(1)});
+
 require('./src/models/card');
 
 app.use(express.json());
